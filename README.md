@@ -11,3 +11,4 @@ http://wedding.rampatra.com/
 3. Edited `README.md` file
 4. Edited `CNAME` file
 5. Edited index.html
+6. Changed .png in browserconfig.xml and manifest.json
