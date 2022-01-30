@@ -32,6 +32,9 @@ http://wedding.rampatra.com/
 9. Setup GitHub pages
   * Go to repo's Settings >> Pages
   * Set source to main branch's "/ (root)" directory
+10. Get custom domain name
+  * https://github.com/sjmeijer/mootmeijer has notes on this
+  * https://domains.google/
 
 # Notes
 * You can generate the Uber deeplink here
