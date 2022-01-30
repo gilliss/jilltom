@@ -22,8 +22,11 @@ http://wedding.rampatra.com/
   * $ gulp
     * 'Node Sass does not yet support your current environment'
     * https://stackoverflow.com/questions/37324519/node-sass-does-not-yet-support-your-current-environment-linux-64-bit-with-false
+    * https://stackoverflow.com/questions/60087434/macos-catalina-fse-node-cannot-be-opened-because-the-developer-cannot-be-ver
   * $ npm rebuild node-sass
 
 # Notes
 * You can generate the Uber deeplink here
   * https://developer.uber.com/products/ride-requests
+* Google Maps directions deeplink instructions here
+  * https://developers.google.com/maps/documentation/urls/get-started#directions-action
