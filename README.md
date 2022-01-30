@@ -4,7 +4,7 @@ A wedding website based on Ram Patra's `wedding-website` project.
 https://github.com/rampatra/wedding-website
 http://wedding.rampatra.com/
 
-# Getting Started
+# Steps
 1. Downloaded `wedding-website` repo
 2. Removed `.github` file
 3. Edited `README.md` file
@@ -24,6 +24,11 @@ http://wedding.rampatra.com/
     * https://stackoverflow.com/questions/37324519/node-sass-does-not-yet-support-your-current-environment-linux-64-bit-with-false
     * https://stackoverflow.com/questions/60087434/macos-catalina-fse-node-cannot-be-opened-because-the-developer-cannot-be-ver
   * $ npm rebuild node-sass
+8. Push an existing repository from the command line to GitHub
+  * Create new empty repo on GitHub
+  * $ git remote add origin https://github.com/gilliss/jilltom.git
+  * $ git branch -M main
+  * $ git push -u origin main
 
 # Notes
 * You can generate the Uber deeplink here
