@@ -10,6 +10,7 @@ http://wedding.rampatra.com/
 3. Edited `README.md` file
 4. Edited `CNAME` file
 5. Edited index.html
+  * https://developers.google.com/search/docs/advanced/crawling/block-indexing
 6. Changed .png images in browserconfig.xml and manifest.json
 7. Changed .jpg hero image in styles.scss
   * It seems styles.scss must be compiled
