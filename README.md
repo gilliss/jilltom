@@ -29,6 +29,9 @@ http://wedding.rampatra.com/
   * $ git remote add origin https://github.com/gilliss/jilltom.git
   * $ git branch -M main
   * $ git push -u origin main
+9. Setup GitHub pages
+  * Go to repo's Settings >> Pages
+  * Set source to main branch's "/ (root)" directory
 
 # Notes
 * You can generate the Uber deeplink here
