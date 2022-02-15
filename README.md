@@ -47,11 +47,11 @@ http://wedding.rampatra.com/
     * https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site
     * https://stackoverflow.com/questions/54059217/how-to-fix-domain-does-not-resolve-to-the-github-pages-server-error-in-github
     * https://support.google.com/domains/answer/10751068
-    1. Created A record with apex domain (jilltom.com) as "Host name" and GitHub Pages IP addresses as "Data"
-      * points "Host name" to "Data"
-    2. Created AAAA record with apex domain (jilltom.com) as "Host name" and GitHub Pages IP addresses as "Data"
-    3. Created CNAME record with www subdomain (www.jilltom.com) as "Host name" and the default domain (gilliss.github.io) as "Data"
-      * See links above for @ and www shorthand in "Host name" field
+    1. Created `A` record with apex domain (jilltom.com) as `Host name` and GitHub Pages IP addresses as `Data`
+      * points `Host name` to `Data`
+    2. Created `AAAA` record with apex domain (jilltom.com) as `Host name` and GitHub Pages IP addresses as `Data`
+    3. Created `CNAME` record with www subdomain (www.jilltom.com) as `Host name` and the default domain (gilliss.github.io) as `Data`
+      * See links above for @ and www shorthand in `Host name` field
     4. Under the GitHub repo's Settings >> Code and automation" >> Pages >> Custom domain, entered apex domain (jilltom.com) as the custom domain. Also checked the box to "Enforce HTTPS".
     5. Wait a bit for things to update and check with `dig`:
     ```
@@ -59,7 +59,7 @@ http://wedding.rampatra.com/
     $ dig jilltom.com +noall +answer -t AAAA
     $ dig www.jilltom.com +nostats +nocomments +nocmd
     ```
-    6. Created a TXT record to verify my custom domain name for GitHub Pages
+    6. Created a `TXT` record to verify my custom domain name for GitHub Pages
       * https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages
       ```
       $ dig _github-pages-challenge-gilliss.jilltom.com +nostats +nocomments +nocmd TXT
