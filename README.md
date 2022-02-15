@@ -48,6 +48,7 @@ http://wedding.rampatra.com/
     * https://stackoverflow.com/questions/54059217/how-to-fix-domain-does-not-resolve-to-the-github-pages-server-error-in-github
     * https://support.google.com/domains/answer/10751068
     1. Created A record with apex domain (jilltom.com) as "Host name" and GitHub Pages IP addresses as "Data"
+      * points "Host name" to "Data"
     2. Created AAAA record with apex domain (jilltom.com) as "Host name" and GitHub Pages IP addresses as "Data"
     3. Created CNAME record with www subdomain (www.jilltom.com) as "Host name" and the default domain (gilliss.github.io) as "Data"
       * See links above for @ and www shorthand in "Host name" field
