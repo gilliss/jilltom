@@ -52,12 +52,17 @@ http://wedding.rampatra.com/
     3. Created CNAME record with www subdomain (www.jilltom.com) as "Host name" and the default domain (gilliss.github.io) as "Data"
       * See links above for @ and www shorthand in "Host name" field
     4. Under the GitHub repo's Settings >> Code and automation" >> Pages >> Custom domain, entered apex domain (jilltom.com) as the custom domain. Also checked the box to "Enforce HTTPS".
-    5. Wait a bit for things to udpate and check with `dig`:
+    5. Wait a bit for things to update and check with `dig`:
     ```
     $ dig jilltom.com +noall +answer -t A
     $ dig jilltom.com +noall +answer -t AAAA
     $ dig www.jilltom.com +nostats +nocomments +nocmd
     ```
+    6. Created a TXT record to verify my custom domain name for GitHub Pages
+      * https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages
+      ```
+      $ dig _github-pages-challenge-gilliss.jilltom.com +nostats +nocomments +nocmd TXT
+      ```
 
 # Other notes
 * You can generate an Uber deeplink here
