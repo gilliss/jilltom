@@ -43,10 +43,24 @@ http://wedding.rampatra.com/
   * https://github.com/sjmeijer/mootmeijer has notes on this
   * https://domains.google/
   * https://support.google.com/domains/answer/4522141?hl=en forwarding a Google domain
-  * Edited `CNAME` file to use custom domain
+  * At first, I used domain forwarding, but then switched to specifying custom resource records according to GitHub's "custom domain name" instructions
+    * https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site
+    * https://stackoverflow.com/questions/54059217/how-to-fix-domain-does-not-resolve-to-the-github-pages-server-error-in-github
+    * https://support.google.com/domains/answer/10751068
+    * 1. Created A record with apex domain (jilltom.com) as "Host name" and GitHub Pages IP addresses as "Data"
+    * 2. Created AAAA record with apex domain (jilltom.com) as "Host name" and GitHub Pages IP addresses as "Data"
+    * 3. Created CNAME record with www subdomain (www.jilltom.com) as "Host name" and the default domain (gilliss.github.io) as "Data"
+      * See links above for @ and www shorthand in "Host name" field
+    * 4. Under the GitHub repo's Settings >> Code and automation" >> Pages >> Custom domain, entered apex domain (jilltom.com) as the custom domain. Also checked the box to "Enforce HTTPS".
+    * 5. Wait a bit for things to udpate and check with `dig`:
+    ```
+    $ dig jilltom.com +noall +answer -t A
+    $ dig jilltom.com +noall +answer -t AAAA
+    $ dig www.jilltom.com +nostats +nocomments +nocmd
+    ```
 
 # Other notes
-* You can generate the Uber deeplink here
+* You can generate an Uber deeplink here
   * https://developer.uber.com/products/ride-requests
 * Google Maps directions deeplink instructions here
   * https://developers.google.com/maps/documentation/urls/get-started#directions-action
