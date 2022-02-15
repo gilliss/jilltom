@@ -15,25 +15,25 @@ http://wedding.rampatra.com/
 7. Changed .jpg hero image in `styles.scss`
   * It seems `styles.scss` must be compiled
   ```
-  * $ cd jilltom/
-  * $ npm install
-  * $ gulp
+  $ cd jilltom/
+  $ npm install
+  $ gulp
     * 'command not found: gulp'
     * https://stackoverflow.com/questions/22224831/after-installation-of-gulp-no-command-gulp-found
-  * $ npm install --global gulp-cli # needed sudo
-  * $ gulp
+  $ npm install --global gulp-cli # needed sudo
+  $ gulp
     * 'Node Sass does not yet support your current environment'
     * https://stackoverflow.com/questions/37324519/node-sass-does-not-yet-support-your-current-environment-linux-64-bit-with-false
     * https://stackoverflow.com/questions/60087434/macos-catalina-fse-node-cannot-be-opened-because-the-developer-cannot-be-ver
-  * $ npm rebuild node-sass
-  * $ gulp
+  $ npm rebuild node-sass
+  $ gulp
   ```
 8. Push an existing repository from the command line to GitHub
   * Create new empty repo on GitHub
   ```
-  * $ git remote add origin https://github.com/gilliss/jilltom.git
-  * $ git branch -M main
-  * $ git push -u origin main
+  $ git remote add origin https://github.com/gilliss/jilltom.git
+  $ git branch -M main
+  $ git push -u origin main
   ```
 9. Setup GitHub pages
   * Go to repo's Settings >> Pages
