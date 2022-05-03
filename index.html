@@ -78,7 +78,7 @@
                             <li><a href="#map" class="login">Venue</a></li> <!-- menu bar option -->
                             <li><a href="#recommendations">Gazetteer</a></li> <!-- menu bar option -->
                             <li><a href="#eng-pics">Photos</a></li> <!-- menu bar option -->
-                            <li><a href=https://food52.com/shop/registry/13196-tom-and-jill>Registry <i class="fa fa-external-link" style="color:#A52A2A"></i></a></li> <!-- menu bar option -->
+                            <li><a href="#registry">Registry</a></li> <!-- menu bar option -->
                         </ul>
                     </nav>
                 </div>
@@ -123,7 +123,8 @@
         <div class="row">
             <div class="col-md-12 text-center">
                 <h3>Details</h3>
-                <p>5:30PM October 29<sup>th</sup> 2022, The Cookery, Durham, NC</p>
+                <p>October 28-29, 2022 <br> Durham, NC </p>
+                <p>Ceremony: 5:30PM October 29<sup>th</sup> at The Cookery</p>
                 <p>More details to come!</p>
                 <!-- <p>Use the menu up top, or scroll down, to learn more!</p> -->
             </div>
@@ -344,6 +345,47 @@
               </div>
           </div>
       </div>
+    </div>
+</section>
+
+
+<!--
+############
+- Section linked from menu bar
+############
+-->
+<section id="registry" class="section-padding">
+    <div class="text-center">
+        <h3>Registry</h3>
+        <p>We are registered at the following locations!</p>
+    </div>
+    <div id="map-canvas"></div>
+    <div id="map-content-wrapper" class="container pointer-events-none">
+        <div class="row">
+            <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
+                <div class="text-center">
+                    <div id="btn-show-content" class="toggle-map-content pointer-events-auto">
+                        <i class="fa fa-info-circle"></i>&nbsp;&nbsp; Show info
+                    </div>
+                </div>
+                <div id="map-content" class="pointer-events-auto">
+                    <div class="row text-center">
+                        <div class="col-md-6" style="padding: 5px;">
+                            <a class="btn btn-fill btn-small"
+                               href="https://food52.com/shop/registry/13196-tom-and-jill"><i
+                                    class=""></i>&nbsp;&nbsp;Food52</a>
+                        </div>
+                        <div class="col-md-6" style="padding: 5px;">
+                          <a class="btn btn-fill btn-small"
+                             href="https://www.crateandbarrel.com/gift-registry/jill-refvem-and-tom-gilliss/r6500138"><i
+                                  class=""></i>&nbsp;&nbsp;Crate & Barrel</a>
+                            <!--<a class="btn btn-accent btn-small" id="btn-show-map"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Show
+                                map</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
